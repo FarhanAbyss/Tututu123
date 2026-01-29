@@ -49,14 +49,12 @@ body {
 .profile h1 {
   font-family: 'Bebas Neue', cursive;
   font-size: 2.8em;
-  color: #fff;
   margin: 15px 0 10px;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .profile .bio {
   font-size: 1.2em;
-  color: #fff;
   max-width: 85%;
   line-height: 1.6;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
@@ -131,6 +129,16 @@ body {
 .footer p {
   margin: 6px 0;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Rainbow text with black outline at 25% opacity */
+.rainbow-text {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.25); /* Outline hitam dengan opacity 25% */
+  text-stroke: 1px rgba(0, 0, 0, 0.25); /* Untuk browser lain, meskipun support terbatas */
+  color: transparent; /* Pastikan teks transparan untuk efek gradient */
 }
 
 /* Smoother animations */
